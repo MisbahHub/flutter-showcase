@@ -8,49 +8,106 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  TextEditingController name= TextEditingController();
+  TextEditingController age= TextEditingController();
+  TextEditingController city= TextEditingController();
+  TextEditingController university= TextEditingController();
+
   @override
   Widget build(BuildContext context) {
+    FocusManager.instance.primaryFocus?.unfocus();
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown,
+        backgroundColor: Colors.blueGrey.shade900,
         title: const Text('Profile Info', style: TextStyle(color: Colors.white))
       ),
       body: Center(
         child: Column(
       mainAxisSize :MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
       children:[
-      Container(
-        width: 200,
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          color: Colors.blueGrey.shade900,
-          borderRadius: BorderRadius.circular(20)
+        TextField(
+          controller: name,
+         decoration: InputDecoration(
+           hintText: 'Enter your name',
+           labelText: 'your name',
+           border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+           suffixIcon: IconButton(
+             onPressed: (){
+               name.clear();
+             },
+             icon: Icon(Icons.close),
+           ),
+         ),
         ),
+        SizedBox(height:20),
+        TextField(
+          controller: age,
+          keyboardType: TextInputType.number,
+          decoration: InputDecoration(
+            hintText: 'Enter your age',
+            labelText: 'your age',
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            suffixIcon: IconButton(
+              onPressed: (){
+                age.clear();
+              },
+              icon: Icon(Icons.close),
+            ),
+          ),
+        ),
+        SizedBox(height:20),
+        TextField(
+          controller: city,
+          decoration: InputDecoration(
+            hintText: 'Enter your city',
+            labelText: 'your city',
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            suffixIcon: IconButton(
+              onPressed: (){
+                city.clear();
+              },
+              icon: Icon(Icons.close),
+            ),
+          ),
+        ),
+        SizedBox(height:20),
+        TextField(
+          controller: university,
+          decoration: InputDecoration(
+            hintText: 'Enter your university name',
+            labelText: 'your university',
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            suffixIcon: IconButton(
+              onPressed: (){
+                university.clear();
+              },
+              icon: Icon(Icons.close),
+            ),
+          ),
+        ),
+        const SizedBox(height: 60),
 
-        child: const Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children:[
-           Text('Name : Misbah Nisar', style: TextStyle(color:Colors.white, fontSize:16)),
-           Text('Age : 18', style: TextStyle(color: Colors.white, fontSize:16)),
-           Text('City: Karachi', style: TextStyle(color: Colors.white, fontSize:16)),
-           Text('University : MUET', style: TextStyle(color: Colors.white, fontSize:16)),
-          ],
-        ),
-      ),
-        const SizedBox(height: 50),
 
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey.shade600,
+                  foregroundColor: Colors.white,
+                  padding:EdgeInsets.symmetric(horizontal:20, vertical:10),
+                  elevation: 5,
+                  fixedSize: Size(110, 40),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  )
+              ),
               onPressed: (){
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                  SnackBar(
                     content:  Text('About me clicked'),
                     duration: Duration(seconds: 2),
-                    backgroundColor: Colors.brown,
+                    backgroundColor: Colors.blueGrey.shade800,
                   ),
                 );
               },
@@ -58,12 +115,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(width: 15),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blueGrey.shade600,
+              foregroundColor: Colors.white,
+              padding:EdgeInsets.symmetric(horizontal:20, vertical:10),
+                elevation: 5,
+                fixedSize: Size(110, 40),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              )
+            ),
               onPressed: (){
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                  SnackBar(
                     content: Text('Contact clicked'),
                     duration: Duration(seconds: 2),
-                    backgroundColor: Colors.brown,
+                    backgroundColor: Colors.blueGrey.shade800,
                   ),
                 );
               },
@@ -71,12 +138,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(width: 15),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey.shade600,
+                foregroundColor: Colors.white,
+                padding:EdgeInsets.symmetric(horizontal:20, vertical:10),
+                elevation: 5,
+                fixedSize: Size(110, 40),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                )
+            ),
               onPressed: (){
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                   SnackBar(
                     content: Text('Skills clicked'),
                     duration: Duration(seconds: 2),
-                    backgroundColor: Colors.brown,
+                    backgroundColor: Colors.blueGrey.shade800,
                   ),
                 );
               },
