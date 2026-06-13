@@ -1,16 +1,15 @@
-# login_page
+# 🔐 Login Page UI
 
-A new Flutter project.
+A simple, clean, and interactive Login Screen built using Flutter that demonstrates form handling, validation, and smooth input features.
 
-## Getting Started
+## ✨ Features
+* **Form Validation:** Checks for empty email and password fields using 'FormState'.
+* **Smart Focus:** Pressing 'Next' on the keyboard automatically moves focus to the password field.
+* **Toggle Visibility:** Easily show or hide the password with a single tap.
+* **Quick Clear:** Instantly clear the email field using the dynamic '(X)' button.
+* **Anti-Overflow:** Uses a scrollable layout ('ListView') so the keyboard never cuts or blocks the UI.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Built With
+* **Flutter** & **Dart**
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 App Demo
