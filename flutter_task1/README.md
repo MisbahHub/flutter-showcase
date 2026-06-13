@@ -12,4 +12,6 @@ A clean, responsive, and interactive Profile Information form built using Flutte
 ## 🛠️ Built With
 * **Flutter** & **Dart**
 
+---
+
 ## 📸 App Demo
