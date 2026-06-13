@@ -1,16 +1,15 @@
-# flutter_task1
+# 👤 Profile Info UI
 
-A new Flutter project.
+A clean, responsive, and interactive Profile Information form built using Flutter. This project focuses on capturing user details and displaying interactive feedback via snackbars.
 
-## Getting Started
+## ✨ Features
+* **Profile Input Fields:** Custom styled fields with rounded borders to enter Name, Age, City, and University.
+* **Smart Numeric Keyboard:** The Age field automatically triggers a number pad (`TextInputType.number`) for a smoother user experience.
+* **One-Tap Clear Buttons:** Every field features a dynamic suffix close (`X`) icon to instantly clear the inputs.
+* **Interactive Custom Buttons:** Styled action buttons (**About Me**, **Contact**, and **Skills**) grouped neatly at the bottom.
+* **Instant SnackBar Feedback:** Implemented `ScaffoldMessenger` to display stylish, colored SnackBars when action buttons are clicked.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Built With
+* **Flutter** & **Dart**
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 App Demo
