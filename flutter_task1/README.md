@@ -17,7 +17,7 @@ A clean, responsive, and interactive Profile Information form built using Flutte
 ## 📸 App Demo
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4c2b51f7-37bf-421c-a82f-b48f7fba6018" width="250" height="500" style="object-fit: contain;" alt="App Demo" />
+  <video src="https://github.com/user-attachments/assets/4c2b51f7-37bf-421c-a82f-b48f7fba6018" width="260" controls autoplay muted loop></video>
 </p>
 
 
