@@ -17,7 +17,7 @@ A simple, clean, and interactive Login Screen built using Flutter that demonstra
 ## 📸 App Demo
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3826e539-918b-417f-9a19-15b0bb2216b5" width="280" alt="App Demo" />
+  <img src="https://github.com/user-attachments/assets/3826e539-918b-417f-9a19-15b0bb2216b5" width="250" height="500" style="object-fit: contain;" alt="App Demo" />
 </p>
 
 
