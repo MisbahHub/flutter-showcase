@@ -27,7 +27,9 @@ PreGenie is a premium dark-themed mobile application frontend prototype built wi
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7648de01-c95f-4f54-bd5c-7345ad3e4e17" width="320" title="PrepGenie App Walkthrough" />
+  <video src="https://github.com/user-attachments/assets/7648de01-c95f-4f54-bd5c-7345ad3e4e17" width="320" controls>
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 
