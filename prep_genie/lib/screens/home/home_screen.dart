@@ -257,7 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                       )
-                          : // 🔥 UPDATED GRIDVIEW: Direct itemBuilder ke andar code rakh diya hai
+                          : 
                       GridView.builder(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
@@ -284,7 +284,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: InkWell(
                                 borderRadius: BorderRadius.circular(15),
                                 onTap: () {
-                                  // 🔥 Context local hone ki wajah se navigation makkhan ki tarah chalegi
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
