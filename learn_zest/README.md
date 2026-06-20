@@ -24,7 +24,9 @@ LearnZest is a modern learning platform designed to help students study in a mor
 ## 📱 App Walkthrough
 
 
-<img width="432" height="976" alt="WhatsApp Video 2026-06-20 at 8 14 25 PM" src="https://github.com/user-attachments/assets/b44b4264-5b8d-4a5f-9ce0-cd33fdbe90fb" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b44b4264-5b8d-4a5f-9ce0-cd33fdbe90fb" width="260" alt="LearnZest App Walkthrough" />
+</p>
 
 
 
