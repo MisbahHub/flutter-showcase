@@ -16,7 +16,7 @@ PreGenie is a premium dark-themed mobile application frontend prototype built wi
 
 ## 🛠️ Tech Stack & Architecture
 
-* **Framework:** Flutter (v3.x)
+* **Framework:** Flutter 
 * **Language:** Dart
 * **UI Design:** Premium High-Fidelity Dark Theme
 * **State Management:** Active State Simulation via dynamic local contexts and class-scoped static architecture.
@@ -24,3 +24,9 @@ PreGenie is a premium dark-themed mobile application frontend prototype built wi
 ---
 
 ## 📱 App Walkthrough
+
+
+
+https://github.com/user-attachments/assets/7648de01-c95f-4f54-bd5c-7345ad3e4e17
+
+
