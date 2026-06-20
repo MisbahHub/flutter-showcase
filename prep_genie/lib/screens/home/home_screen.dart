@@ -257,7 +257,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                       )
-                          : GridView.builder(
+                          : // 🔥 UPDATED GRIDVIEW: Direct itemBuilder ke andar code rakh diya hai
+                      GridView.builder(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: foundCategories.length,
@@ -268,10 +269,52 @@ class _HomeScreenState extends State<HomeScreen> {
                           childAspectRatio: 1.2,
                         ),
                         itemBuilder: (context, index) {
-                          return _buildCategoryCard(
-                            foundCategories[index]["title"],
-                            foundCategories[index]["icon"],
-                            foundCategories[index]["color"],
+                          // Filtered data variables
+                          final String title = foundCategories[index]["title"];
+                          final IconData icon = foundCategories[index]["icon"];
+                          final Color color = foundCategories[index]["color"];
+
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF131937),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: Material(
+                              color: Colors.transparent,
+                              child: InkWell(
+                                borderRadius: BorderRadius.circular(15),
+                                onTap: () {
+                                  // 🔥 Context local hone ki wajah se navigation makkhan ki tarah chalegi
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => QuestionsScreen(categoryName: title),
+                                    ),
+                                  );
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          color: color.withOpacity(0.1),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                        child: Icon(icon, color: color, size: 26),
+                                      ),
+                                      Text(
+                                        title,
+                                        style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
                           );
                         },
                       ),
@@ -281,51 +324,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           )
         ),
-    );
-  }
-
-  Widget _buildCategoryCard(String title, IconData icon, Color color) {
-    return Container(
-        decoration: BoxDecoration(
-          color: const Color(0xFF131937),
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Material(
-          color: Colors.transparent,
-          child: InkWell(
-            borderRadius: BorderRadius.circular(15),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => QuestionsScreen(categoryName: title),
-                ),
-              );
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                      color: color.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Icon(icon, color: color, size: 26),
-                  ),
-                  Text(
-                    title,
-                    style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-
     );
   }
 }
