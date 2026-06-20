@@ -15,14 +15,13 @@ class _HomeScreenState extends State<HomeScreen> {
   FocusNode passwordFocus = FocusNode();
 
 
-  void initState() {
-    super.initState();
-    FocusManager.instance.primaryFocus?.unfocus();
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GestureDetector(
+        onTap: () {
+          FocusScope.of(context).unfocus();
+        },
+     child: Scaffold(
       body: Form(
         key: formkey,
         child: ListView(
@@ -128,6 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text('Login'),
               ),
             ),
+
             SizedBox(height:10),
             Row(
               mainAxisAlignment : MainAxisAlignment.end,
@@ -138,6 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+
             SizedBox(height:20),
             SizedBox(
               width: double.infinity,
@@ -148,10 +149,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: EdgeInsets.all(15),
                 )
               ),
-            )
-          ]
+            ),
+
+          ],
         ),
       ),
+    ),
     );
+
   }
 }
