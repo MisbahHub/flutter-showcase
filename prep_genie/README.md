@@ -25,8 +25,7 @@ PreGenie is a premium dark-themed mobile application frontend prototype built wi
 
 ## 📱 App Walkthrough
 
-Click the button below to watch the high-fidelity app walkthrough and interaction simulation in action:
+<img width="432" height="976" alt="WhatsAppVideo2026-06-20at8 15 14PM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/9d5604b3-d2c6-4647-aa75-c99d066a9f85" />
 
-[![Watch Demo](https://img.shields.io/badge/▶_Watch-App_Demo-purple?style=for-the-badge&logo=flutter)](https://github.com/user-attachments/assets/7648de01-c95f-4f54-bd5c-7345ad3e4e17)
 
 
