@@ -1,16 +1,34 @@
-# prep_genie
+# PreGenie - AI-Powered Interview Preparation App 🚀
 
-A new Flutter project.
+PreGenie is a premium dark-themed mobile application frontend prototype built with Flutter. It is designed to help job aspirants prepare for interviews across various domains (Technical, HR, Marketing, and Finance) through mock simulations, category-wise question banks, and interactive performance tracking.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Core Features Implemented
 
-A few resources to get you started if this is your first Flutter project:
+* **Dynamic Category Search & Filtration:** Real-time search functionality on the home dashboard to seamlessly filter interview domains. Includes an elegant "No Category Found" fallback state.
+* **Domain-Specific Question Banks:** Dynamic question rendering with contextual "AI Suggested Hints" based on the user's selected track (e.g., Flutter architecture for Technical, behavioral matrices for HR).
+* **Live Performance Tracker:** A data-driven analytics dashboard utilizing formula-based simulations to calculate overall readiness and render visual progress trackers.
+* **Interactive Profile & Theme Control:** Includes dynamic email/username parsing logic and a fully responsive state-driven dark/light mode toggle.
+* **Secure Navigation & Session Flush:** Clean routing flow with state clearing logic upon user logout.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack & Architecture
+
+* **Framework:** Flutter 
+* **Language:** Dart
+* **UI Design:** Premium High-Fidelity Dark Theme
+* **State Management:** Active State Simulation via dynamic local contexts and class-scoped static architecture.
+
+---
+
+## 📱 App Walkthrough
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cad80bfc-c7b5-4fff-98b5-a725d9f580d3" width="220" alt="PrepGenie App Walkthrough" />
+</p>
+
+
+
+

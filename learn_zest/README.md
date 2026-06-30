@@ -1,16 +1,37 @@
-# learn_zest
+# LearnZest - EdTech Learning Platform UI 🎓
 
-A new Flutter project.
+LearnZest is a modern learning platform designed to help students study in a more interactive and effective way. The goal of this app is to make learning easy, engaging, and accessible for everyone.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Core Features Implemented
 
-A few resources to get you started if this is your first Flutter project:
+* **Course Exploration Dashboard:** An elegant grid and list layout showing available courses, categories, and progress indicators.
+* **Interactive Learning Analytics:** Visually engaging custom cards and progress metrics to track weekly study hours and completed modules.
+* **Resource Management UI:** Dynamic navigation structure allowing users to seamlessly switch between ongoing courses, video lectures, and assignments.
+* **Premium & Clean Theming:** Built with a modern, high-contrast UI design tailored for study and reading focus.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+* **Framework:** Flutter 
+* **Language:** Dart
+* **UI Design:** Modern Minimalist/EdTech Aesthetic
+
+---
+
+## 📱 App Walkthrough
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b44b4264-5b8d-4a5f-9ce0-cd33fdbe90fb" width="260" alt="LearnZest App Walkthrough" />
+</p>
+
+
+
+
+
+
+<p align="center">
+  </p>

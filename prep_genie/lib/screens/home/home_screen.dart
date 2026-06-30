@@ -257,7 +257,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                       )
+<<<<<<< HEAD
                           :
+=======
+                          : 
+>>>>>>> 8a0cad9ca3cf65f64339e3f7ac7dfd2da2e8e8e4
                       GridView.builder(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
