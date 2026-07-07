@@ -1,16 +1,53 @@
-# internify
+# Internify – Virtual Internship Management Platform
 
-A new Flutter project.
+### Your Gateway to Virtual Internships 🚀
 
-## Getting Started
+Internify is a Flutter-based internship management platform designed to streamline communication and workflow between interns and administrators. The application provides a centralized digital workspace for task management, submission tracking, notifications, and certificate processing.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Intern Portal
+- Secure registration and login
+- Personalized internship dashboard
+- View assigned tasks and deadlines
+- Submit GitHub repository links
+- Track submission status in real time
+- Receive notifications and updates
+- Request internship certificates
+- Manage profile and settings
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Admin Portal
+- Manage registered interns
+- Publish and assign tasks
+- Review GitHub submissions
+- Approve or reject task submissions
+- Process certificate requests
+- Monitor internship progress through a centralized dashboard
+
+---
+
+## Technology Stack
+
+- **Framework:** Flutter & Dart
+- **Storage:** Shared Preferences (Local Persistence)
+- **Data Handling:** JSON Serialization
+- **UI & Design:** Google Fonts & Material Design
+
+---
+
+## Demo Video
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/2c519c4f-b617-4140-b800-b5b32c11fa94" style="max-width: 100%; height: auto; display: block;" controls>
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+---
+
+## Developed By
+
+**Misbah Nisar** 
+Software Engineering Student 
